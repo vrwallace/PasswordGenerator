@@ -321,6 +321,9 @@ $minLength = 16;
 //$minimumAcceptableLength = 12; // Adjust the minimum acceptable length as needed
 
 $maxLength =16;
+
+//**** if you set the max length shorter than 16 it will take a long time to come up with passowords that are short enough. So do not do this.
+
     //max($minimumAcceptableLength, $minLength); // Set maxLength to the higher value between minimumAcceptableLength and minLength by default
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['difficulty'])) {
